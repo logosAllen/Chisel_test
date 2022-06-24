@@ -5,6 +5,18 @@ You've done the [Chisel Bootcamp](https://github.com/freechipsproject/chisel-boo
 are ready to start your own Chisel project.  The following procedure should get you started
 with a clean running [Chisel3](https://www.chisel-lang.org/) project.
 
+## FIFO and multi clock domain test by Allen
+
+fifo design at Chisel_test/src/main/scala/fifo/fifo.scala
+fifo testbench at Chisel_test/src/test/scala/fifo/AddTester.scala
+
+at root folder
+
+$ sbt run  #will generate verilog in generated folder
+$ sbt test #will run testbench
+
+you can find waveform at Chisel_test/test_run_dir/FIFO_should_work/FIFO.vcd
+
 ## Make your own Chisel3 project
 
 ### Dependencies
